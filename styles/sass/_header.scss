@@ -1,0 +1,12 @@
+@import 'mixins';
+@import 'variables';
+header {
+    @include headBanner(url(../assets/home-1.jpeg));
+}
+
+.headNav ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+}

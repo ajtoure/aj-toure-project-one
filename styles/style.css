@@ -268,3 +268,25 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*Font Variables*/
+/*Color Variables*/
+header {
+  background-image: url(../assets/home-1.jpeg);
+  font-family: "Raleway", sans-serif;
+  font-size: 46px;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+}
+
+.headNav ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+/*Font Variables*/
+/*Color Variables*/
