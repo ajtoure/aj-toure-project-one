@@ -1,0 +1,8 @@
+@import 'setup';
+@import 'mixins';
+@import 'variables';
+.wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
