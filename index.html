@@ -14,7 +14,7 @@
 
 <body>
     <!--Header Starts-->
-    <header>
+    <header class="home__header">
         <!--Wrapper Starts-->
         <div class="wrapper nav__wrapper">
             <!--Site Heading/Logo-->
@@ -30,11 +30,11 @@
                     <li class="nav__link"><a href="#shop">shop</a></li>
                     <li class="nav__link"><a href="#contact">contact</a></li>
                     <!--Shopping Icon - remember a11y-->
-                    <button class="menu__button"><i class="fas fa-shopping-bag"></i></button>
+                    <li class="nav__link"><button class="menu__button"><i class="fas fa-shopping-bag"></i></button></li>
                     <!--Search Icon - remember a11y-->
-                    <button class="menu__button"><i class="fas fa-search"></i></button>
+                    <li class="nav__link"><button class="menu__button"><i class="fas fa-search"></i></button></li>
                     <!--Hidden Hamburger Menu Button-->
-                    <button class="burger__menu"><i class="fas fa-bars"></i></button>
+                    <li class="nav__link"><button class="burger__menu"><i class="fas fa-bars"></i></button></li>
                 </ul>
             </nav>
             <!--Navigation ends here-->
@@ -48,12 +48,14 @@
         <!--Blog Section-->
         <section>
             <!--Wrapper for Blog Section 1-->
-            <div>
-                <div>
-                    <h2>most popular recipes</h2>
-                    <p>Nori grape silver beet broccoli komby beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
-                        bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
-                    <button>view recipes</button>
+            <div class="wrapper">
+                <div class="blog__box blog__box1">
+                    <div class="blog blog1">
+                        <h2>most popular recipes</h2>
+                        <p>Nori grape silver beet broccoli komby beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel
+                            azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
+                        <button>view recipes</button>
+                    </div>
                 </div>
             </div>
             <!--Image for Blog Section 1-->
@@ -63,7 +65,7 @@
             <img src="./assets/home-3.jpeg" alt="a homemade soft shell taco piled with rare cooked beef and fresh garnish">
             <!--Wrapper for Blog Section 2-->
             <div>
-                <div>
+                <div class="wrapper">
                     <ul>
                         <!--Blog Categories Links-->
                         <li>
@@ -106,7 +108,7 @@
         <!--Restaurant Section-->
         <section>
             <!--Restaurant Section Wrapper-->
-            <div>
+            <div class="wrapper">
                 <img src="./assets/home-circle-text.png" alt="Yummm a fancy food place">
                 <img src="./assets/home-4.jpeg" alt="a cacophany of chairs awaits on a bright modern balcony">
                 <h2>our restaurants</h2>
@@ -134,7 +136,7 @@
         <!--Client Review Section-->
         <section>
             <!--Client Review Wrapper-->
-            <div>
+            <div class="wrapper">
                 <div>
                     <!--Before Quote <i class="fas fa-quote-left"></i> -->
                     <h2>hungry clients</h2>
@@ -152,7 +154,7 @@
         <!--Footer Start-->
         <footer>
             <!--Footer Wrapper Start-->
-            <div>
+            <div class="wrapper">
                 <div>
                     <!--1st Footer Section-->
                     <h2>delicious</h2>

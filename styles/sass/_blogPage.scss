@@ -1,3 +1,8 @@
 @import 'setup';
 @import 'mixins';
 @import 'variables';
+@import 'header';
+@import 'media';
+.blog__header {
+    @include headBanner(url(../assets/blog-1.jpeg));
+}

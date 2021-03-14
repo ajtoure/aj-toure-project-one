@@ -1,3 +1,19 @@
 @import 'setup';
 @import 'mixins';
 @import 'variables';
+@import 'header';
+@import 'media';
+@import 'general';
+.home__header {
+    @include headBanner(url(../assets/home-1.jpeg));
+}
+
+section {
+    display: flex;
+    width: 100%;
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
