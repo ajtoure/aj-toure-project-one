@@ -30,11 +30,11 @@
                     <li class="nav__link"><a href="#shop">shop</a></li>
                     <li class="nav__link"><a href="#contact">contact</a></li>
                     <!--Shopping Icon - remember a11y-->
-                    <li class="nav__link"><button class="menu__button"><i class="fas fa-shopping-bag"></i></button></li>
+                    <li class="nav__link nav__button"><button class="menu__button"><i class="fas fa-shopping-bag"></i></button></li>
                     <!--Search Icon - remember a11y-->
-                    <li class="nav__link"><button class="menu__button"><i class="fas fa-search"></i></button></li>
+                    <li class="nav__link nav__button"><button class="menu__button"><i class="fas fa-search"></i></button></li>
                     <!--Hidden Hamburger Menu Button-->
-                    <li class="nav__link"><button class="burger__menu"><i class="fas fa-bars"></i></button></li>
+                    <li class="nav__link nav__button"><button class="burger__menu"><i class="fas fa-bars"></i></button></li>
                 </ul>
             </nav>
             <!--Navigation ends here-->
@@ -46,57 +46,77 @@
     <!--Main Section-->
     <main>
         <!--Blog Section-->
-        <section>
+        <section class="main__blog__section">
             <!--Wrapper for Blog Section 1-->
-            <div class="wrapper">
-                <div class="blog__box blog__box1">
-                    <div class="blog blog1">
+            <div class="blog__section blog__section1">
+                <div class="blog__item">
+                    <div class="blog wrapper">
                         <h2>most popular recipes</h2>
                         <p>Nori grape silver beet broccoli komby beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel
                             azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
-                        <button>view recipes</button>
+                        <button class="blognav__button">view recipes</button>
                     </div>
                 </div>
+                <div class="blog__item">
+                    <img class="blog__item blog__img" src="./assets/home-2.jpeg" alt="a vibrant fresh salad gleams from an earthenware bowl">
+                </div>
+
             </div>
             <!--Image for Blog Section 1-->
-            <img src="./assets/home-2.jpeg" alt="a vibrant fresh salad gleams from an earthenware bowl">
 
-            <!--Image for Blog Section 2-->
-            <img src="./assets/home-3.jpeg" alt="a homemade soft shell taco piled with rare cooked beef and fresh garnish">
+
+
             <!--Wrapper for Blog Section 2-->
-            <div>
+            <div class="blog__section blog__section2">
+                <!--Image for Blog Section 2-->
+                <div class="blog__item"><img class="blog__img" src="./assets/home-3.jpeg" alt="a homemade soft shell taco piled with rare cooked beef and fresh garnish"></div>
                 <div class="wrapper">
-                    <ul>
+                    <ul class="blog__item blog__nav">
                         <!--Blog Categories Links-->
                         <li>
                             <a><i class="fas fa-lemon"></i></a>
-                            <h3>vegetarian</h3>
-                            <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            <div class="blog__navlink">
+                                <h3>vegetarian</h3>
+                                <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            </div>
+
                         </li>
                         <li>
                             <a><i class="fas fa-utensils"></i></a>
-                            <h3>appetizers</h3>
-                            <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            <div class="blog__navlink">
+                                <h3>appetizers</h3>
+                                <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            </div>
                         </li>
                         <li>
                             <a><i class="fas fa-coffee"></i></a>
-                            <h3>desserts</h3>
-                            <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            <div class="blog__navlink">
+                                <h3>desserts</h3>
+                                <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            </div>
                         </li>
                         <li>
                             <a><i class="fas fa-glass-martini"></i></a>
-                            <h3>drinks</h3>
-                            <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            <div class="blog__navlink">
+                                <h3>drinks</h3>
+                                <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            </div>
                         </li>
                         <li>
                             <a><i class="fas fa-leaf"></i></a>
-                            <h3>salads</h3>
-                            <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            <div class="blog__navlink">
+                                <h3>salads</h3>
+                                <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            </div>
+
                         </li>
                         <li>
                             <a><i class="fas fa-utensil-spoon"></i></a>
-                            <h3>side dishes</h3>
-                            <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            <div class="blog__navlink">
+                                <h3>side dishes</h3>
+                                <p>Veggies es bonus vobis, proinde vos postuo essum magic kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                            </div>
+
                         </li>
                     </ul>
                 </div>
@@ -106,9 +126,9 @@
         <!--End Blog Section-->
 
         <!--Restaurant Section-->
-        <section>
+        <section class="main__restaurant__section">
             <!--Restaurant Section Wrapper-->
-            <div class="wrapper">
+            <div class="wrapper restaurant__section">
                 <img src="./assets/home-circle-text.png" alt="Yummm a fancy food place">
                 <img src="./assets/home-4.jpeg" alt="a cacophany of chairs awaits on a bright modern balcony">
                 <h2>our restaurants</h2>
@@ -155,10 +175,10 @@
         <footer>
             <!--Footer Wrapper Start-->
             <div class="wrapper">
-                <div>
+                <div class="footer__section foot__section1">
                     <!--1st Footer Section-->
                     <h2>delicious</h2>
-                    <ul>
+                    <ul class="footer__nav foot__nav1">
                         <li>
                             <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussel sprout cabbage.</p>
                         </li>
@@ -176,9 +196,9 @@
                 <!--End 1st Footer Section-->
 
                 <!--2nd Footer Section-->
-                <div>
+                <div class="footer__section foot__section2">
                     <h3>recent posts</h3>
-                    <ul>
+                    <ul class="footer__nav foot__nav2">
                         <li>
                             <p>
                                 Beetroot water spinach okra water
@@ -214,7 +234,7 @@
                 <!--End 2nd Footer Section-->
 
                 <!--3rd Footer Section-->
-                <div>
+                <div class="footer__section foot__section3">
                     <h3>subscribe now</h3>
                     <p>Get all of our newest recipes immediately in your inbox</p>
                     <!--Contact Form-->
@@ -224,16 +244,17 @@
                         <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </form>
                     <!--Social Media Links-->
-                    <ul>
+                    <ul class="footer__nav foot__nav3">
                         <li><i class="fab fa-facebook-f"></i></li>
                         <li><i class="fab fa-twitter"></i></li>
                         <li><i class="fab fa-instagram"></i></li>
                     </ul>
                 </div>
                 <!--End 3rd Footer Section-->
-
             </div>
-            <div>
+            <!--End Footer Wrapper-->
+
+            <div class="footer__copy">
                 <p>Copyright &copy by <span>POLAR</span>. All Rights Reserved</p>
             </div>
         </footer>

@@ -13,8 +13,14 @@ h3,
 h4 {
     font-family: $headFont;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 body {
     font-family: $baseFont;
+}
+
+main,
+section {
+    margin: 0 auto;
 }

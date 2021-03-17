@@ -1,19 +1,24 @@
 @import 'variables';
+@import 'general';
 .nav__wrapper {
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-around;
+    position: relative;
 }
 
 .head__nav {
-    height: 30px;
-    max-width: 50%;
+    height: 50px;
+    width: 100%;
     h1 {
-        font-size: 1.5em;
+        font-size: 2.5rem;
+        position: relative;
     }
     .nav__list {
+        width: 75%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
         height: 30px;
@@ -22,6 +27,9 @@
         &:first-child {
             padding-left: 3px;
         }
+        &:last-child {
+            padding-right: 0;
+        }
         .nav__link {
             list-style-type: none;
             margin: 0;
@@ -29,11 +37,13 @@
                 font-size: 12px;
                 text-decoration: none;
                 font-weight: 700;
-                color: $headerBase;
+                color: $primary;
                 padding-right: 10px;
                 &:hover {
-                    color: $headerHover;
+                    color: $secondary;
                 }
+                padding: 0 10px 0 0;
+                margin: 0;
             }
             .menu__button {
                 border: none;

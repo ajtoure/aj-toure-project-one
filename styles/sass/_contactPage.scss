@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'header';
 @import 'media';
+@import 'general';
 .contact__header {
     @include headBanner(url(../assets/contact-1.jpeg));
 }

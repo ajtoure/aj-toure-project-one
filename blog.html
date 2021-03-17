@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Blog</title>
 </head>
 
@@ -14,23 +15,25 @@
     <!--Header Starts-->
     <header class="blog__header">
         <!--Wrapper Starts-->
-        <div>
+        <div class="wrapper nav__wrapper">
             <!--Site Heading/Logo-->
             <h1>delicious</h1>
             <!--Navigation Starts-->
-            <nav>
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#recipes">recipes</a></li>
-                    <li><a href="#nutrition">nutrition</a></li>
-                    <li><a href="#blog">blog</a></li>
-                    <li><a href="#shop">shop</a></li>
-                    <li><a href="#contact">contact</a></li>
+            <nav class="head__nav">
+                <ul class="nav__list">
+                    <li class="nav__link"><a href="#home">home</a></li>
+                    <li class="nav__link"><a href="#about">about</a></li>
+                    <li class="nav__link"><a href="#recipes">recipes</a></li>
+                    <li class="nav__link"><a href="#nutrition">nutrition</a></li>
+                    <li class="nav__link"><a href="#blog">blog</a></li>
+                    <li class="nav__link"><a href="#shop">shop</a></li>
+                    <li class="nav__link"><a href="#contact">contact</a></li>
                     <!--Shopping Icon - remember a11y-->
-                    <li><i class="fas fa-shopping-bag"></i></li>
+                    <li class="nav__link nav__button"><button class="menu__button"><i class="fas fa-shopping-bag"></i></button></li>
                     <!--Search Icon - remember a11y-->
-                    <li><i class="fas fa-search"></i></li>
+                    <li class="nav__link nav__button"><button class="menu__button"><i class="fas fa-search"></i></button></li>
+                    <!--Hidden Hamburger Menu Button-->
+                    <li class="nav__link nav__button"><button class="burger__menu"><i class="fas fa-bars"></i></button></li>
                 </ul>
             </nav>
             <!--Navigation ends here-->
