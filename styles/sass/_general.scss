@@ -11,14 +11,6 @@ html {
     margin: 0 auto;
 }
 
-p,
-li,
-a,
-i {
-    line-height: 24px;
-    letter-spacing: 0.3px;
-}
-
 h1,
 h2,
 h3,
@@ -30,15 +22,18 @@ h4 {
 
 body {
     font-family: $baseFont;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.3px;
 }
 
-main,
-section {
+main {
     margin: 0 auto;
     line-height: 24px;
+}
+
+section {
+    margin: 0 auto;
 }
 
 li {
