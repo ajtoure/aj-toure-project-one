@@ -43,133 +43,164 @@
     <!--End of Header Section-->
 
     <main>
-        <article>
-            <section>
-                <h2>pineapple chicken</h2>
-                <p>
-                    Posted at <time datetime="2018-07-11 1900">July 11, 2018</time>
-                </p>
-                <p>by<a href="#admin">Admin</a></p>
-                <p>in
-                    <a href="#recipes">Recipes</a></p>
-            </section>
-            <section>
-                <p>
+        <div class="wrapper">
+            <article class="blog__article">
+                <section class="blog__article--head">
+                    <h2>pineapple chicken</h2>
+                    <ul class="blog__article--head--links">
+                        <li>
+                            <p class="date__time">
+                                Posted at <time datetime="2018-07-11 1900">July 11, 2018</time>
+                            </p>
+                        </li>
+                        <li class="article--link">
+                            <p>by<a href="#admin">Admin</a></p>
+                        </li>
+                        <li class="article--link">
+                            <p>in
+                                <a href="#recipes">Recipes</a></p>
+                        </li>
+                    </ul>
 
-                </p>
-            </section>
-            <section>
-                <ul>
-                    <li>
-                        <p>tags: Recipes, Chicken, Pineapple, Mexican</p>
+
+
+                </section>
+                <section class="blog__article--text">
+                    <p>
+                        Morbi et accumsan est, non convallis metus. Etiam faucibus, leo et scelerisque facilisis, magna erat dictum nibh, vel congue tortor massa vitae magna. Magna erta nibh, vel congue tortor massa vitae magna.</p>
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                    <p>Turnip greens yarrow ricebean rutabaga endie cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
+                        Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout oriander water chestnut gourd swiss chard wakame kohlrabi carrot watercress. Corn amaranth
+                        salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                    <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts blak-eyes pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
+                        bean earthnut pea suerra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
+
+                    </p>
+                </section>
+                <section class="blog__article--data">
+                    <ul class="blog__data--links">
+                        <li>
+                            <p><span class="blog__subheader">tags:</span> Recipes, Chicken, Pineapple, Mexican</p>
+                        </li>
+                        <li>
+                            <p class="blog__subheader">share:</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+
+        <section class="bio">
+            <div class="wrapper blog__bio">
+                <div class="blog__bio--img"><img src="./assets/blog-2.jpeg" alt="A slender white woman with blonde highlights runs her hands through her hair and leans to the side"></div>
+                <div class="blog__bio--text">
+                    <h3 class="blog__subheader">sally lucas</h3>
+                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
+                        Lotus root water spinach fennel kombu maize bamboo soot green bean swiss chard seakale pumpkin onion checkpea gram cord pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="wrapper related__blog">
+                <h3 class="blog__subheader">related posts</h3>
+                <ul class="related__blog--links">
+                    <li class="blog__nav--item">
+                        <img src="./assets/blog-3.jpeg" alt="a beautiful pink cake dressed with flowers sits on a china desert plate">
+                        <h2 class="blog__subheader">how to bake the perfect cake</h2>
+                        <ul class="related__subnav">
+                            <li>July 19, 2018</li>
+                            <li>by <a href="#admin">Admin</a></li>
+                            <li>in <a href="#recipes">Recipes</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <p>share:</p>
-                        <ul>
-                            <li><i class="fab fa-facebook-f"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-instagram"></i></li>
+                    <li class="blog__nav--item">
+                        <img src="./assets/blog-4.jpeg" alt="Tiny cupcakes in little foil tins decorated to look like blooming cacti">
+                        <h2 class="blog__subheader">floral cupcakes
+                        </h2>
+                        <ul class="related__subnav">
+                            <li>July 22, 2018</li>
+                            <li>by <a href="#admin">Admin</a></li>
+                            <li>in <a href="#recipes">Recipes</a></li>
+                        </ul>
+                    </li>
+                    <li class="blog__nav--item"><img src="./assets/blog-5.jpeg" alt="There is a salmon toast here with cilantro or whatever">
+                        <h2 class="blog__subheader">single post with image</h2>
+                        <ul class="related__subnav">
+                            <li>July 11, 2018</li>
+                            <li>by <a href="#admin">Admin</a></li>
+                            <li>in <a href="#recipes">Recipes</a></li>
                         </ul>
                     </li>
                 </ul>
-            </section>
-        </article>
-
-
-        <section class="bio">
-            <img src="" alt="">
-            <div>
-                <h3>sally lucas</h3>
-                <p></p>
             </div>
         </section>
 
-
         <section>
-            <h3>related posts</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <h2>
-                    </h2>
-                    <ul>
-                        <li>July 19, 2018</li>
-                        <li>by <a href="#admin">Admin</a></li>
-                        <li>in <a href="#recipes">Recipes</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2>
-                    </h2>
-                    <ul>
-                        <li>July 22, 2018</li>
-                        <li>by <a href="#admin">Admin</a></li>
-                        <li>in <a href="#recipes">Recipes</a></li>
-                    </ul>
-                </li>
-                <li><img src="" alt="">
-                    <h2>
-                    </h2>
-                    <ul>
-                        <li>July 11, 2018</li>
-                        <li>by <a href="#admin">Admin</a></li>
-                        <li>in <a href="#recipes">Recipes</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>
-                <span>02</span> comments
-            </h3>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h4></h4>
-                    <p></p>
-                    <p></p>
+            <div class="wrapper comment__section">
+                <h3 class="blog__subheader">
+                    02 comments
+                </h3>
+                <div class="comment--box">
+                    <div class="comment__avatar"><img src="./assets/blog-6.jpeg" alt="profile picture of Lucatony Avaro"></div>
+                    <div class="comment comment1">
+                        <h4><span class="blog__subheader">Lucatony Avaro</span> - Web Developer</h4>
+                        <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot swuash brussel sprout chard.</p>
+                        <p>Jul 17, 2015 at 15 hours ago</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h4></h4>
-                    <p></p>
-                    <p></p>
+                <div class="comment--box">
+                    <div class="comment__avatar"><img src="./assets/blog-7.jpeg" alt="profile picture of brian hudson"></div>
+                    <div class="comment comment2">
+                        <h4><span class="blog__subheader">Brian Hudson</span> - Web Developer</h4>
+                        <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jicama green bean celtuce collard greens avocado wuandong fennel gumbo black-eyed pea. Grape silver beet
+                            watercress potato tigernut corn groundnut.</p>
+                        <p>Jul 17, 2015, at 15 hours ago</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <h3>leave a comment</h3>
-            <p>Your email address will not be published. Required field are marked *</p>
-            <form action="">
-                <fieldset>
-                    <label for="name" class="sr-only">name</label>
-                    <input type="text" name="name" placeholder="Name *" required>
+            <div class="wrapper leavecomment__section">
+                <h3>leave a comment</h3>
+                <p>Your email address will not be published. Required field are marked *</p>
+                <form class="leavecomment--form" action="POST">
+                    <fieldset>
+                        <label for="name" class="sr-only">name</label>
+                        <input type="text" name="name" placeholder="Name *" required>
 
-                    <label for="email" class="sr-only">email</label>
-                    <input type="email" name="email" placeholder="Email *" required>
+                        <label for="email" class="sr-only">email</label>
+                        <input type="email" name="email" placeholder="Email *" required>
 
-                    <label for="website" class="sr-only">your website</label>
-                    <input type="url" name="website" placeholder="Your Website">
+                        <label for="website" class="sr-only">your website</label>
+                        <input type="url" name="website" placeholder="Your Website">
 
-                    <label for="comment" class="sr-only">comment</label>
-                    <input type="text" placeholder="Comment">
+                        <label for="comment" class="sr-only">comment</label>
+                        <input type="textarea" nme="comment" placeholder="Comment">
 
-                    <button type="submit" name="submit">submit comment</button>
-                </fieldset>
-            </form>
+                        <button type="submit" name="submit">submit comment</button>
+                    </fieldset>
+                </form>
+            </div>
         </section>
     </main>
 
+    <!--Footer Start-->
     <footer>
-        <div>
-            <div>
+        <!--Footer Wrapper Start-->
+        <div class="wrapper foot__wrapper">
+            <div class="footer__section foot__section1">
+                <!--1st Footer Section-->
                 <h2>delicious</h2>
-                <ul>
+                <ul class="footer__nav foot__nav1">
                     <li>
                         <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussel sprout cabbage.</p>
                     </li>
@@ -184,10 +215,12 @@
                     </li>
                 </ul>
             </div>
+            <!--End 1st Footer Section-->
 
-            <div>
+            <!--2nd Footer Section-->
+            <div class="footer__section foot__section2">
                 <h3>recent posts</h3>
-                <ul>
+                <ul class="footer__nav foot__nav2">
                     <li>
                         <p>
                             Beetroot water spinach okra water
@@ -220,24 +253,30 @@
                     </li>
                 </ul>
             </div>
+            <!--End 2nd Footer Section-->
 
-            <div>
+            <!--3rd Footer Section-->
+            <div class="footer__section foot__section3">
                 <h3>subscribe now</h3>
                 <p>Get all of our newest recipes immediately in your inbox</p>
-                <form action="">
+                <!--Contact Form-->
+                <form action="post">
                     <label for="email" aria="hidden" class="sr-only">email</label>
                     <input type="email" name="email" placeholder="Enter your email" required>
                     <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
                 </form>
-                <ul>
+                <!--Social Media Links-->
+                <ul class="footer__nav foot__nav3">
                     <li><i class="fab fa-facebook-f"></i></li>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-instagram"></i></li>
                 </ul>
             </div>
-
+            <!--End 3rd Footer Section-->
         </div>
-        <div>
+        <!--End Footer Wrapper-->
+
+        <div class="footer__copy">
             <p>Copyright &copy by <span>POLAR</span>. All Rights Reserved</p>
         </div>
     </footer>

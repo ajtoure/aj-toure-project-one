@@ -16,7 +16,7 @@
     <!--Header Starts-->
     <header class="home__header">
         <!--Wrapper Starts-->
-        <div class="wrapper nav__wrapper">
+        <div class="nav__wrapper">
             <!--Site Heading/Logo-->
             <h1>delicious</h1>
             <!--Navigation Starts-->
@@ -26,9 +26,9 @@
                     <li class="nav__link"><a href="#about">about</a></li>
                     <li class="nav__link"><a href="#recipes">recipes</a></li>
                     <li class="nav__link"><a href="#nutrition">nutrition</a></li>
-                    <li class="nav__link"><a href="#blog">blog</a></li>
+                    <li class="nav__link"><a href="./blog.html">blog</a></li>
                     <li class="nav__link"><a href="#shop">shop</a></li>
-                    <li class="nav__link"><a href="#contact">contact</a></li>
+                    <li class="nav__link"><a href="./contact.html">contact</a></li>
                     <!--Shopping Icon - remember a11y-->
                     <li class="nav__link nav__button"><button class="menu__button"><i class="fas fa-shopping-bag"></i></button></li>
                     <!--Search Icon - remember a11y-->
@@ -48,29 +48,24 @@
         <!--Blog Section-->
         <section class="main__blog__section">
             <!--Wrapper for Blog Section 1-->
-            <div class="blog__section blog__section1">
-                <div class="blog__item">
-                    <div class="blog wrapper">
-                        <h2>most popular recipes</h2>
-                        <p>Nori grape silver beet broccoli komby beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel
-                            azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
-                        <button class="blognav__button">view recipes</button>
-                    </div>
+            <div class="blog__item blog__section1--item1">
+                <div class="blog wrapper">
+                    <h2>most popular recipes</h2>
+                    <p>Nori grape silver beet broccoli komby beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
+                        bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
+                    <button class="blognav__button">view recipes</button>
                 </div>
-                <div class="blog__item">
-                    <img class="blog__item blog__img" src="./assets/home-2.jpeg" alt="a vibrant fresh salad gleams from an earthenware bowl">
-                </div>
-
             </div>
             <!--Image for Blog Section 1-->
-
-
+            <div class="blog__item blog__section1--item2">
+                <img class="blog__item blog__img" src="./assets/home-2.jpeg" alt="a vibrant fresh salad gleams from an earthenware bowl">
+            </div>
 
             <!--Wrapper for Blog Section 2-->
-            <div class="blog__section blog__section2">
-                <!--Image for Blog Section 2-->
-                <div class="blog__item"><img class="blog__img" src="./assets/home-3.jpeg" alt="a homemade soft shell taco piled with rare cooked beef and fresh garnish"></div>
-                <div class="wrapper">
+            <!--Image for Blog Section 2-->
+            <div class="blog__item blog__section2--item1"><img class="blog__img" src="./assets/home-3.jpeg" alt="a homemade soft shell taco piled with rare cooked beef and fresh garnish"></div>
+            <div class="blog__section2--item2">
+                <div class=wrapper>
                     <ul class="blog__item blog__nav">
                         <!--Blog Categories Links-->
                         <li>
@@ -129,8 +124,8 @@
         <section class="main__restaurant__section">
             <!--Restaurant Section Wrapper-->
             <div class="wrapper restaurant__section">
-                <img src="./assets/home-circle-text.png" alt="Yummm a fancy food place">
-                <img src="./assets/home-4.jpeg" alt="a cacophany of chairs awaits on a bright modern balcony">
+                <div class="restaurant__section--accent"><img src="./assets/home-circle-text.png" alt="Yummm a fancy food place"></div>
+                <div class="restaurant__section--img"><img src="./assets/home-4.jpeg" alt="a cacophany of chairs awaits on a bright modern balcony"></div>
                 <h2>our restaurants</h2>
                 <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
             </div>
@@ -139,32 +134,38 @@
         <!--End Restaurant Section-->
 
         <!--Gallery Section-->
-        <section>
+        <section class="gallery__section">
             <!--Gallery Wrapper-->
             <div>
-                <img src="assets/home-5.jpeg" alt="A bowl filled with fresh blended green dressing, dressed with beets, pomegranate, cahsews, and dried fruit">
-                <img src="assets/home-6.jpeg" alt="a homemade burger dribbling on a bun, dressed with a variety of cabbage">
-                <img src="assets/home-7.jpeg" alt="a pile of fresh picked red onion sits in a garden">
-                <img src="assets/home-8.jpeg" alt="a sweet looking cake 🔝  with strawberry icing and tropical flowers">
-                <img src="assets/home-9.jpeg" alt="juicy scones bursting with blueberries cool on blueberry stained parchment paper">
-                <img src="assets/home-10.jpeg" alt="bright green sprigs of dill sparkle from their bath of cool greek tzatziki">
+                <ul class="gallery">
+                    <li class="gallery__item1"><img src="assets/home-5.jpeg" alt="A bowl filled with fresh blended green dressing, dressed with beets, pomegranate, cahsews, and dried fruit"></li>
+                    <li class="gallery__item2"><img src="assets/home-6.jpeg" alt="a homemade burger dribbling on a bun, dressed with a variety of cabbage"></li>
+                    <li class="gallery__item3"><img src="assets/home-7.jpeg" alt="a pile of fresh picked red onion sits in a garden"></li>
+                    <li class="gallery__item4"><img src="assets/home-8.jpeg" alt="a sweet looking cake 🔝  with strawberry icing and tropical flowers"></li>
+                    <li class="gallery__item5"><img src="assets/home-9.jpeg" alt="juicy scones bursting with blueberries cool on blueberry stained parchment paper"></li>
+                    <li class="gallery__item6"><img src="assets/home-10.jpeg" alt="bright green sprigs of dill sparkle from their bath of cool greek tzatziki"></ul>
+                </li>
+
             </div>
             <!--End Wrapper-->
         </section>
         <!--End Gallery Section-->
 
         <!--Client Review Section-->
-        <section>
+        <section class="client__section">
             <!--Client Review Wrapper-->
             <div class="wrapper">
-                <div>
+                <div class="client__section--text">
                     <!--Before Quote <i class="fas fa-quote-left"></i> -->
                     <h2>hungry clients</h2>
                     <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini
                         burdock yarrow chickpea dandelion.</p>
                     <!-- After Quote: <i class="fas fa-quote-right"></i>-->
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right"></i>
+                    <div class="client__carousel">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+
                 </div>
             </div>
             <!--End Wrapper-->
@@ -174,7 +175,7 @@
         <!--Footer Start-->
         <footer>
             <!--Footer Wrapper Start-->
-            <div class="wrapper">
+            <div class="wrapper foot__wrapper">
                 <div class="footer__section foot__section1">
                     <!--1st Footer Section-->
                     <h2>delicious</h2>
@@ -238,7 +239,7 @@
                     <h3>subscribe now</h3>
                     <p>Get all of our newest recipes immediately in your inbox</p>
                     <!--Contact Form-->
-                    <form action="">
+                    <form action="post">
                         <label for="email" aria="hidden" class="sr-only">email</label>
                         <input type="email" name="email" placeholder="Enter your email" required>
                         <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>

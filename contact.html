@@ -43,41 +43,50 @@
     <!--End of Header Section-->
 
     <!--Main Page Section-->
-    <section>
-        <div>
-            <div>
-                <h2>drop us a line</h2>
-                <form action="">
-                    <fieldset>
-                        <label for="name" class="sr-only">your name</label>
-                        <input type="text" name="name" placeholder="Your Name" required>
+    <section class="main__contact__section">
+        <div class="contact__container">
+            <div class="contact__wrap wrapper">
+                <div class="contact__wrap--form">
+                    <h2>drop us a line</h2>
+                    <form action="post">
+                        <fieldset>
+                            <label for="name" class="sr-only">your name</label>
+                            <input type="text" name="name" placeholder="Your Name" required>
 
-                        <label for="email" class="sr-only">your email</label>
-                        <input type="email" name="email" placeholder="Your Email">
+                            <label for="email" class="sr-only">your email</label>
+                            <input type="email" name="email" placeholder="Your Email">
 
-                        <label for="subject" class="sr-only">subject</label>
-                        <input type="text" name="subject">
+                            <label for="subject" class="sr-only">subject</label>
+                            <input type="text" name="subject" placeholder="Subject">
 
-                        <label for="message" class="sr-only">message</label>
-                        <input type="text" name="message" placeholder="message" required>
-                    </fieldset>
-                    <button type="submit">send message<i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
+                            <label for="message" class="sr-only">message</label>
+                            <input type="textarea" name="message" placeholder="Message" required>
+                        </fieldset>
+                        <button type="submit">send message<i class="fas fa-long-arrow-alt-right"></i></button>
+                    </form>
+                </div>
             </div>
 
-            <div>
-                <h2>contact details</h2>
-                <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</p>
+            <div class="contact__copy">
+                <div class="contact__copy--box copy--box1">
+                    <h2>contact details</h2>
+                    <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</p>
+                </div>
 
-                <h3>working hours</h3>
-                <p>MON - FRI : 08:00am - 05:30pm</p>
-                <p>not working on saturday and sunday!</p>
+                <div class="contact__copy--box copy--box2">
+                    <h3>working hours</h3>
+                    <p>MON - FRI : 08:00am - 05:30pm</p>
+                    <p>not working on saturday and sunday!</p>
+                </div>
 
-                <h3>contact info</h3>
-                <p>a delicious restaurant</p>
-                <p>Toronto, Ontario</p>
-                <p>yum@food.com</p>
-                <p>+1 234 567 8910</p>
+                <div class="contact__copy--box copy--box3">
+                    <h3>contact info</h3>
+                    <p>a delicious restaurant</p>
+                    <p>Toronto, Ontario</p>
+                    <p>yum@food.com</p>
+                    <p>+1 234 567 8910</p>
+                </div>
+
             </div>
         </div>
         <div class="banner"></div>
@@ -85,11 +94,14 @@
 
 
 
+    <!--Footer Start-->
     <footer>
-        <div>
-            <div>
+        <!--Footer Wrapper Start-->
+        <div class="wrapper foot__wrapper">
+            <div class="footer__section foot__section1">
+                <!--1st Footer Section-->
                 <h2>delicious</h2>
-                <ul>
+                <ul class="footer__nav foot__nav1">
                     <li>
                         <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussel sprout cabbage.</p>
                     </li>
@@ -104,10 +116,12 @@
                     </li>
                 </ul>
             </div>
+            <!--End 1st Footer Section-->
 
-            <div>
+            <!--2nd Footer Section-->
+            <div class="footer__section foot__section2">
                 <h3>recent posts</h3>
-                <ul>
+                <ul class="footer__nav foot__nav2">
                     <li>
                         <p>
                             Beetroot water spinach okra water
@@ -140,27 +154,30 @@
                     </li>
                 </ul>
             </div>
+            <!--End 2nd Footer Section-->
 
-
-
-
-            <div>
+            <!--3rd Footer Section-->
+            <div class="footer__section foot__section3">
                 <h3>subscribe now</h3>
                 <p>Get all of our newest recipes immediately in your inbox</p>
-                <form action="">
+                <!--Contact Form-->
+                <form action="post">
                     <label for="email" aria="hidden" class="sr-only">email</label>
                     <input type="email" name="email" placeholder="Enter your email" required>
                     <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
                 </form>
-                <ul>
+                <!--Social Media Links-->
+                <ul class="footer__nav foot__nav3">
                     <li><i class="fab fa-facebook-f"></i></li>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-instagram"></i></li>
                 </ul>
             </div>
-
+            <!--End 3rd Footer Section-->
         </div>
-        <div>
+        <!--End Footer Wrapper-->
+
+        <div class="footer__copy">
             <p>Copyright &copy by <span>POLAR</span>. All Rights Reserved</p>
         </div>
     </footer>

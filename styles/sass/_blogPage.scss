@@ -6,3 +6,229 @@
 .blog__header {
     @include headBanner(url(../assets/blog-1.jpeg));
 }
+
+.blog__article {
+    h2 {
+        font-size: 1.5rem;
+        padding: 40px 0 0 0;
+    }
+    .blog__article--head {
+        padding-bottom: 40px;
+    }
+    .blog__article--head--links {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-family: $headFont;
+        li {
+            padding-right: 10px;
+            border-right: 1px solid $tertiary;
+            list-style: none;
+            a {
+                text-decoration: none;
+                padding-left: 5px;
+            }
+        }
+        .article--link {
+            padding-left: 10px;
+        }
+         :last-child {
+            border: none;
+        }
+    }
+    .blog__article--text {
+        p {
+            padding-bottom: 30px;
+            font-size: .8rem;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            margin: 0;
+        }
+        border-bottom: 1px solid $accent;
+        ;
+    }
+    .blog__data--links {
+        padding: 20px 0;
+        margin: 0;
+        li {
+            padding-bottom: 5px;
+        }
+        border-bottom: 1px solid $accent;
+    }
+}
+
+.blog__bio {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    .blog__bio--img {
+        width: 10%;
+    }
+    .blog__bio--text {
+        width: 83%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+        background-color: $tertiary;
+        h3 {
+            font-size: 1rem;
+            padding: 10px 0;
+        }
+        p {
+            height: auto;
+            width: 100%;
+            text-align: left;
+            line-height: 24px;
+        }
+    }
+    border-bottom: 1px solid #ECECEC;
+}
+
+.related__blog {
+    border-bottom: 1px solid #ECECEC;
+    padding: 40px auto;
+    margin: 40px auto;
+    height: auto;
+    .related__blog--links {
+        display: flex;
+        justify-content: space-between;
+    }
+    .blog__nav--item {
+        width: 30%;
+        padding: 20px 0;
+        margin: 0;
+        h2.blog__subheader {
+            padding: 20px auto;
+            margin: 30px auto;
+        }
+        .related__subnav {
+             :first-child {
+                color: $accent;
+            }
+        }
+    }
+    .related__subnav {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 10px;
+            border-right: 1px solid $tertiary;
+        }
+         :last-child {
+            border: none;
+        }
+         :first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+.related__subnav {
+    li a {
+        font-family: $headFont;
+        text-decoration: none;
+        color: $primary;
+        font-weight: 500;
+    }
+}
+
+.comment__section {
+    h3 {
+        margin: 30px 0;
+    }
+    padding-bottom: 20px;
+}
+
+.comment--box {
+    display: flex;
+    width: 100%;
+    padding: 10px 10px 40px 10px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    ;
+    justify-content: space-between;
+    .comment__avatar {
+        width: 100px;
+        height: 100px;
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .comment {
+        padding: 10px;
+        h4 {
+            font-weight: 400;
+            padding: 0 10px;
+            margin: 0;
+        }
+        p {
+            padding: 10px;
+            margin: 0;
+        }
+        background-color: $tertiary;
+        width: 90%;
+    }
+}
+
+.blog__subheader {
+    font-weight: 600;
+}
+
+.leavecomment__section {
+    h3 {
+        padding-bottom: 20px;
+        color: $primary;
+    }
+    p {
+        padding-bottom: 20px;
+        color: $accent;
+    }
+}
+
+.leavecomment--form {
+    padding: 20px 0 40px 0;
+    fieldset {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: $accent;
+        border: none;
+        input {
+            background-color: $tertiary;
+            border: none;
+            height: 40px;
+            line-height: 24px;
+            ;
+        }
+        input[name=name],
+        input[name=email],
+        input[name=website] {
+            width: 32%;
+            height: 50px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        input[type=textarea] {
+            width: 100%;
+            height: 200px;
+            padding: 20px;
+        }
+        button {
+            background-color: $secondary;
+            color: #FFF;
+            line-height: 24px;
+            font-family: $headFont;
+            width: 150px;
+            border: none;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+    }
+}
