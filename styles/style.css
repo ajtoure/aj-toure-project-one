@@ -6346,7 +6346,6 @@ body {
 main,
 section {
     margin: 0 auto;
-    line-height: 0.3px;
 }
 
 li {
@@ -7032,8 +7031,7 @@ header {
 }
 
 .leavecomment--form fieldset input[name=name],
-.leavecomment--form fieldset input[name=email],
-{
+.leavecomment--form fieldset input[name=email] {
     height: 50px;
     margin-bottom: 20px;
     padding: 10px;
