@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/eebb423b1e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="script.js"> -->
     <title>Home</title>
 </head>
 
@@ -20,8 +21,10 @@
             <!--Site Heading/Logo-->
             <h1>delicious</h1>
             <!--Navigation Starts-->
-            <nav class="head__nav">
-                <ul class="nav__list">
+            <nav class="head__nav" id="headNav">
+                <!--Hidden Hamburger Menu Button-->
+                <button class="burger__menu" id="burgerMenu"><i class="fas fa-bars"></i></button>
+                <ul class="nav__list" id="navList">
                     <li class="nav__link"><a href="#home">home</a></li>
                     <li class="nav__link"><a href="#about">about</a></li>
                     <li class="nav__link"><a href="#recipes">recipes</a></li>
@@ -29,13 +32,15 @@
                     <li class="nav__link"><a href="./blog.html">blog</a></li>
                     <li class="nav__link"><a href="#shop">shop</a></li>
                     <li class="nav__link"><a href="./contact.html">contact</a></li>
+
+                    <span class="nav__icons">
                     <!--Shopping Icon - remember a11y-->
                     <li class="nav__link nav__button"><button class="menu__button"><i class="fas fa-shopping-bag"></i></button></li>
                     <!--Search Icon - remember a11y-->
                     <li class="nav__link nav__button"><button class="menu__button"><i class="fas fa-search"></i></button></li>
-                    <!--Hidden Hamburger Menu Button-->
-                    <li class="nav__link nav__button"><button class="burger__menu"><i class="fas fa-bars"></i></button></li>
+                    </span>
                 </ul>
+
             </nav>
             <!--Navigation ends here-->
         </div>
@@ -261,6 +266,26 @@
         </footer>
 
     </main>
+    <script>
+        const siteMenu = {};
+        siteMenu.navHeader = document.getElementById("headNav");
+        siteMenu.navBurger = document.getElementById("burgerMenu");
+        siteMenu.navList = document.getElementById("navList");
+
+        console.log(siteMenu);
+
+        siteMenu.navBurger.addEventListener('click', function() {
+            if (siteMenu.navList.className === "nav__list") {
+                siteMenu.navList.className = "nav__list--toggle";
+                siteMenu.navHeader.style.overflow = "visible";
+            } else if (siteMenu.navList.className === "nav__list--toggle") {
+                siteMenu.navList.className = "nav__list";
+                siteMenu.navHeader.style.overflow = "hidden";
+            }
+        });
+
+        // attach an event listener to the hamburger menu icon
+    </script>
 
 </body>
 
