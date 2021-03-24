@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/eebb423b1e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="script.js"> -->
     <title>Home</title>
 </head>
 
@@ -23,7 +22,7 @@
             <!--Navigation Starts-->
             <nav class="head__nav" id="headNav">
                 <!--Hidden Hamburger Menu Button-->
-                <button class="burger__menu" id="burgerMenu"><i class="fas fa-bars"></i></button>
+                <button class="burger__menu" id="burgerMenu"><i class="fas fa-bars" id="barsIcon"></i></button>
                 <ul class="nav__list" id="navList">
                     <li class="nav__link"><a href="#home">home</a></li>
                     <li class="nav__link"><a href="#about">about</a></li>
@@ -267,9 +266,34 @@
 
     </main>
     <script>
-        // test js went here
-    </script>
+        const siteMenu = {};
+        siteMenu.navHeader = document.getElementById("headNav");
+        siteMenu.navBurger = document.getElementById("burgerMenu");
+        siteMenu.navList = document.getElementById("navList");
 
+
+        console.log(siteMenu);
+
+        siteMenu.navBurger.addEventListener('click', function() {
+            siteMenu.navClose = document.createElement('li');
+            siteMenu.navClose.innerHTML = `<i class="fas fa-times"></i>`;
+
+            siteMenu.navClose.addEventListener('click', function() {
+                siteMenu.navList.className = "nav__list";
+                //siteMenu.navHeader.style.overflow = "hidden";
+                siteMenu.navBurger.className = "burger__menu";
+                siteMenu.navList.remove(siteMenu.navClose);
+            });
+
+            if (siteMenu.navList.className === "nav__list") {
+                siteMenu.navList.className = "nav__list--toggle";
+                siteMenu.navHeader.style.overflow = "visible";
+                siteMenu.navBurger.className = "burger__menu--toggle";
+                siteMenu.navList.appendChild(siteMenu.navClose);
+            }
+            //else if (siteMenu.navList.className === "nav__list--toggle") {};
+        });
+    </script>
 </body>
 
 </html>
