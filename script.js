@@ -1,17 +1,21 @@
-const blogNav = {};
+const siteMenu = {};
+siteMenu.navHeader = document.getElementById("headNav");
+siteMenu.navBurger = document.getElementById("burgerMenu");
+siteMenu.navList = document.getElementById("navList");
 
-blogNav.myNav = document.querySelector('.head__nav');
-blogNav.navList = document.querySelector('.nav__list');
-blogNav.burgerButton = document.querySelector('.burger__menu');
+console.log(siteMenu);
 
-// attach an event listener to the hamburger menu icon
-
-blogNav.menuToggle = () => {
-    blogNav.burgerButton.addEventListener('click', function() {
-        blogNav.navList.classList.toggle('.nav__list--toggle', true);
-    });
-}
-
+siteMenu.navBurger.addEventListener('click', function() {
+    if (siteMenu.navList.className === "nav__list") {
+        siteMenu.navList.className = "nav__list--toggle";
+        siteMenu.navHeader.style.overflow = "visible";
+        siteMenu.navBurger.className = "burger__menu--toggle";
+    } else if (siteMenu.navList.className === "nav__list--toggle") {
+        siteMenu.navList.className = "nav__list";
+        siteMenu.navHeader.style.overflow = "hidden";
+        siteMenu.navBurger.className = "burger__menu";
+    }
+});
 // when the icon is clicked on, the class of the menu will change to make it visible
 
 // the new menu will include an x icon

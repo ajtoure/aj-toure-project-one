@@ -45,6 +45,16 @@
                                 .nav__link {
                                     padding: 0 50px 0 0;
                                 }
+                                .nav__icons {
+                                    display: flex;
+                                    .menu__button {
+                                        padding-left: 0;
+                                        padding-right: 20px;
+                                    }
+                                    .nav__button {
+                                        padding: 0 20px 0 0;
+                                    }
+                                }
                                 &:first-child {
                                     padding-left: 3px;
                                 }
@@ -66,6 +76,9 @@
                                     padding: 0;
                                     margin: 0;
                                 }
+                            }
+                            .burger__menu--toggle {
+                                display: none;
                             }
                             .main__blog__section {
                                 display: flex;
@@ -177,6 +190,20 @@
                                 padding: 0;
                                 padding-top: 30px;
                                 margin-top: 20px;
+                                .nav__icons {
+                                    display: flex;
+                                    .menu__button {
+                                        padding-left: 0;
+                                        padding-right: 20px;
+                                    }
+                                    .nav__button {
+                                        padding: 0 20px 0 0;
+                                        padding-top: 20px;
+                                    }
+                                }
+                                .menu__button {
+                                    padding-left: 0;
+                                }
                                 &:first-child {
                                     padding-left: 3px;
                                 }
@@ -220,6 +247,9 @@
                                     padding: 0;
                                     margin: 0;
                                 }
+                            }
+                            .burger__menu--toggle {
+                                display: none;
                             }
                             .main__blog__section {
                                 display: flex;
