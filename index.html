@@ -267,7 +267,35 @@
 
     </main>
     <script>
-        // test js went here
+        const siteMenu = {};
+        siteMenu.navHeader = document.getElementById("headNav");
+        siteMenu.navBurger = document.getElementById("burgerMenu");
+        siteMenu.navList = document.getElementById("navList");
+
+
+        console.log(siteMenu);
+
+        siteMenu.navBurger.addEventListener('click', function() {
+            siteMenu.navClose = document.createElement('li');
+            siteMenu.navClose.innerHTML = `<i class="fas fa-times"></i>`;
+
+            if (siteMenu.navList.className === "nav__list") {
+                siteMenu.navList.className = "nav__list--toggle";
+                siteMenu.navHeader.style.overflow = "visible";
+                siteMenu.navBurger.className = "burger__menu--toggle";
+                siteMenu.navList.appendChild(siteMenu.navClose);
+            }
+
+            siteMenu.navClose.addEventListener('click', function() {
+                siteMenu.navList.className = "nav__list";
+                //siteMenu.navHeader.style.overflow = "hidden";
+                siteMenu.navBurger.className = "burger__menu";
+                siteMenu.navList.remove(siteMenu.navClose);
+            });
+
+
+            //else if (siteMenu.navList.className === "nav__list--toggle") {};
+        });
     </script>
 
 </body>
